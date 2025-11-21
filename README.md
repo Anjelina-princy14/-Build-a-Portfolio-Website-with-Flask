@@ -100,12 +100,19 @@ http://127.0.0.1:5000
 🎨 **Features**
 
 ✔ Responsive Navbar
+
 ✔ Hero Section
+
 ✔ About Me Section
+
 ✔ Skills Section
+
 ✔ Projects Section
+
 ✔ Contact Form (POST)
+
 ✔ Separate success page
+
 ✔ Beautiful dark theme design
 
 ---
