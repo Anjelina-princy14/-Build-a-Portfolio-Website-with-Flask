@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="hero">
+    <div>
+        <h1>Hello, I'm {{ name }}</h1>
+        <h2>{{ role }}</h2>
+        <p>
+            I am a Computer Science Engineering student interested in Python,
+            Data Analysis, and building real-world projects using Flask, Pandas,
+            and visualization libraries.
+        </p>
+        <a href="#projects" class="btn">View My Projects</a>
+    </div>
+</section>
+
+<section id="about" class="card">
+    <h2>About Me</h2>
+    <p>
+        I'm passionate about data and solving problems with code.
+        I enjoy cleaning data, visualizing insights, and building small web apps.
+        I'm currently looking for opportunities to grow as a Data Analyst / Python Developer.
+    </p>
+</section>
+
+<section id="skills" class="card">
+    <h2>Skills</h2>
+    <ul class="tags">
+        <li>Python</li>
+        <li>Pandas</li>
+        <li>NumPy</li>
+        <li>Matplotlib</li>
+        <li>Flask</li>
+        <li>HTML &amp; CSS</li>
+        <li>Git &amp; GitHub</li>
+    </ul>
+</section>
+
+<section id="projects" class="card">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+        {% for project in projects %}
+        <div class="project-card">
+            <h3>{{ project.title }}</h3>
+            <p>{{ project.description }}</p>
+            <a href="{{ project.link }}" target="_blank">View on GitHub</a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section id="contact" class="card">
+    <h2>Contact Me</h2>
+    <form action="{{ url_for('contact') }}" method="POST" class="contact-form">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input required type="text" id="name" name="name" placeholder="Your name">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input required type="email" id="email" name="email" placeholder="you@example.com">
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea required id="message" name="message" rows="4"
+                      placeholder="Your message"></textarea>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</section>
+
+{% endblock %}
