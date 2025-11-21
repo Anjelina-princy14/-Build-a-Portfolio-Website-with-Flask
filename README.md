@@ -19,10 +19,15 @@ This project is **Task 6** from the *Python Developer Internship*.
 The aim is to build a **personal portfolio website** using:
 
 * Flask
+  
 * HTML
+  
 * CSS
+  
 * Templates (Jinja2)
+  
 * Routing
+  
 * Contact Form
 
 It is a fully functional, clean, beginner-friendly **mini web application**.
@@ -114,8 +119,10 @@ http://127.0.0.1:5000
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6a16d558-d62d-4887-8054-ec66eee5fc44" />
 
 
-⭐ Portfolio Website Explanation (Simple & Professional)
-🔹 Hero Section (Top of Page)
+⭐ Portfolio Website Explanation 
+
+
+🔹 Hero Section 
 
 This section introduces me as Anjelina Princy A.
 
@@ -211,4 +218,4 @@ This shows the form is working properly.
 **Anjelina Princy A**
 
 
-I’m here!!
+
